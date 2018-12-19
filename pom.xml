@@ -13,6 +13,27 @@
 		<artifactId>junit</artifactId>
 		<version>4.10</version>
 	</dependency>
-</dependencies>
-
+	</dependencies>
+	<build>
+<plugins>
+<plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.3-SNAPSHOT</version>
+<executions>
+	<execution>
+		<phase>compile</phase>
+		<goals>
+			<goal>run<goal>
+				</goals>
+				<configuration>
+					<tasks>
+						<echo>hello world</echo>
+						</tasks>
+					</configuration>
+					</execution>
+						</executions>
+	</plugin>
+</plugins>
+</build>
 </project>
